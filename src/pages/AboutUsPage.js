@@ -7,11 +7,13 @@ import {
   Image,
   VStack,
   Text,
+  useMediaQuery,
 } from '@chakra-ui/react';
 import PageHero from '../components/PageHero';
 import ProfileImg from '../assets/profile.png';
 
 const AboutUsPage = () => {
+  const [isLargerThan62] = useMediaQuery('(min-width: 62em)');
   return (
     <VStack>
       <PageHero />
@@ -32,7 +34,7 @@ const AboutUsPage = () => {
             </Center>
 
             <Heading py={5}>Our Story:</Heading>
-            <Text fontSize="2xl">
+            <Text fontSize={isLargerThan62 ? '2x1' : 'md'}>
               Established in 1998, SK Communication Services is a local company
               which specialize in software development. We have provided a wide
               range of high quality business solutions to meet the needs of our
