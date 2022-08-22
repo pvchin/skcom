@@ -19,12 +19,12 @@ const Nav = ({ onOpen, btnRef }) => {
   const { colorMode, toggleColorMode } = useColorMode();
   const navBg = useColorModeValue('white', 'blackAlpha.200');
   const [isLargerThan48] = useMediaQuery('(min-width: 48em)');
-   const navigate = useNavigate();
+  const navigate = useNavigate();
 
-   const OpenContact = () => {
-     navigate('/contact');
-    };
-    
+  const OpenContact = () => {
+    navigate('/contact');
+  };
+
   const changeScroll = () =>
     document.body.scrollTop > 80 || document.documentElement.scrollTop > 80
       ? setScroll(true)
@@ -33,7 +33,7 @@ const Nav = ({ onOpen, btnRef }) => {
   window.addEventListener('scroll', changeScroll);
 
   const OpenAboutUs = () => {
-     navigate('/about');
+    navigate('/about');
   };
 
   return (
