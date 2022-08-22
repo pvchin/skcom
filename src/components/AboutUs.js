@@ -21,7 +21,8 @@ import Img1 from '../assets/logo512.png';
 
 const AboutUs = () => {
   const TEXTFONTSIZE = "{isLargerThan48 ? 'lg' : 'md'}";
-  const HEADERFONTSIZE = "{isLargerThan48 ? '30' : 'lg'}";
+  const TEXTFONTSIZE2 = "{isLargerThan48 ? '15' : '9'}";
+  const HEADERFONTSIZE = "{isLargerThan48 ? '15' : '9'}";
   const [isLargerThan48] = useMediaQuery('(min-width: 48em)');
 
   const array = [
@@ -71,21 +72,25 @@ const AboutUs = () => {
         <Heading size={isLargerThan48 ? 'lg' : 'md'}>
           Business Solutions
         </Heading>
-        <Text fontSize={TEXTFONTSIZE}>
+        <Text fontSize={isLargerThan48 ? '15' : '9'}>
           Point-of-Sales and Inventory Management System
         </Text>
-        <Text fontSize={TEXTFONTSIZE}>
+        <Text fontSize={isLargerThan48 ? '15' : '9'}>
           Inventory Management and Accounting System
         </Text>
-        <Text fontSize={TEXTFONTSIZE}>
+        <Text fontSize={isLargerThan48 ? '15' : '9'}>
           Hotel and Property Management System
         </Text>
-        <Text fontSize={TEXTFONTSIZE}>Human Resource and Payroll System</Text>
-        <Text fontSize={TEXTFONTSIZE}>Term Contract Management System</Text>
-        <Text fontSize={TEXTFONTSIZE}>
+        <Text fontSize={isLargerThan48 ? '15' : '9'}>
+          Human Resource and Payroll System
+        </Text>
+        <Text fontSize={isLargerThan48 ? '15' : '9'}>
+          Term Contract Management System
+        </Text>
+        <Text fontSize={isLargerThan48 ? '15' : '9'}>
           Lab Information and Management System
         </Text>
-        <Text fontSize={TEXTFONTSIZE}>Cost Recovery System</Text>
+        <Text fontSize={isLargerThan48 ? '15' : '9'}>Cost Recovery System</Text>
       </Flex>
       <Flex
         height="350px"
