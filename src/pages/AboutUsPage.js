@@ -27,7 +27,11 @@ const AboutUsPage = () => {
         justifyContent="center"
         justifyItems="center"
       >
-        <VStack w="50%" h="400">
+        <VStack
+          w={isLargerThan62 ? '50%' : 'auto'}
+          h={isLargerThan62 ? '400' : 'auto'}
+          p={2}
+        >
           <Box shadow="lg" h="450" borderWidth="2px">
             <Center>
               <Image src={ProfileImg} alt="profile" boxSize="140" />

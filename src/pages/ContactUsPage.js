@@ -33,6 +33,7 @@ const ContactUsPage = () => {
           w={isLargerThan62 ? '50%' : 'auto'}
           h="450"
           borderWidth="2px"
+          p={2}
         >
           <Center>
             <Image src={ContactImg} alt="profile" boxSize="140" />
