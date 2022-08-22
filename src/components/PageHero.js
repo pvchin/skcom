@@ -19,7 +19,7 @@ const PageHero = () => {
         <HStack>
           <Icon as={IoReturnUpBack} boxSize="10" />
           <Link to="/">
-            <Heading>Home</Heading>
+            <Heading size="lg">Home</Heading>
           </Link>
         </HStack>
           </GridItem>
