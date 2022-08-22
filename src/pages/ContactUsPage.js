@@ -28,7 +28,12 @@ const ContactUsPage = () => {
         justifyContent="center"
         justifyItems="center"
       >
-        <Box shadow="xl" w="50%" h="450" borderWidth="2px">
+        <Box
+          shadow="xl"
+          w={isLargerThan62 ? '50%' : 'auto'}
+          h="450"
+          borderWidth="2px"
+        >
           <Center>
             <Image src={ContactImg} alt="profile" boxSize="140" />
           </Center>
