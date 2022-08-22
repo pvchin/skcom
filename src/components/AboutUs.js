@@ -55,7 +55,7 @@ const AboutUs = () => {
       flexDirection={isLargerThan48 ? 'row' : 'column'}
     >
       <Flex
-        height={isLargerThan48 ? '350' : '450'}
+        height={isLargerThan48 ? '350' : '350'}
         bg="blackAlpha.200"
         width={isLargerThan48 ? '32%' : 'full'}
         shadow="md"
