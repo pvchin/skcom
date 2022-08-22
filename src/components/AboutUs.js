@@ -66,7 +66,9 @@ const AboutUs = () => {
         border="1px solid #C4DDFF"
       >
         <Icon as={FaHive} boxSize={14} color="blue.600" mb="5" />
-        <Heading>Business Solutions</Heading>
+        <Heading size={isLargerThan48 ? 'lg' : 'md'}>
+          Business Solutions
+        </Heading>
         <Text fontSize="lg">
           Point-of-Sales and Inventory Management System
         </Text>
@@ -92,7 +94,9 @@ const AboutUs = () => {
         border="1px solid #C4DDFF"
       >
         <Icon as={FaTools} boxSize={14} color="blue.600" mb="5" />
-        <Heading>Custom-made Solution</Heading>
+        <Heading size={isLargerThan48 ? 'lg' : 'md'}>
+          Custom-made Solution
+        </Heading>
         <Text fontSize="lg">We tailor made to your business needs</Text>
       </Flex>
       <Flex
@@ -110,7 +114,7 @@ const AboutUs = () => {
         border="1px solid #C4DDFF"
       >
         <Icon as={FaCloudflare} boxSize={14} color="blue.600" mb="5" />
-        <Heading>Business Services</Heading>
+        <Heading size={isLargerThan48 ? 'lg' : 'md'}>Business Services</Heading>
         <Text fontSize="lg">Clouding and Hosting Services</Text>
         <Text fontSize="lg">Web Design and Hosting Services</Text>
         <Text fontSize="lg">Cloud Database Solutions</Text>
