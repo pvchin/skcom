@@ -39,14 +39,14 @@ const ContactUsPage = () => {
             <Image src={ContactImg} alt="profile" boxSize="140" />
           </Center>
           <Heading py={5}>Our Address:</Heading>
-          <Text fontSize={isLargerThan62 ? '28' : '10'} color="blue">
+          <Text fontSize={isLargerThan62 ? '24' : '10'} color="blue">
             Lot Q11, Tapak Perindustrian Lambak Kanan
           </Text>
-          <Text fontSize={isLargerThan62 ? '28' : '10'} color="blue">
+          <Text fontSize={isLargerThan62 ? '24' : '10'} color="blue">
             Jalan Berakas, Brunei Darussalam
           </Text>
-          <Text fontSize={isLargerThan62 ? '28' : '10'} color="blue">
-            Tel: 6738722945 Email: pvchin@skcombn.com
+          <Text fontSize={isLargerThan62 ? '24' : '10'} color="blue">
+            Tel: 6738722945 Email:pvchin@skcombn.com
           </Text>
         </Box>
       </Flex>
