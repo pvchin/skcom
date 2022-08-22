@@ -20,6 +20,8 @@ import {
 import Img1 from '../assets/logo512.png';
 
 const AboutUs = () => {
+  const TEXTFONTSIZE = "{isLargerThan48 ? 'lg' : 'md'}";
+  const HEADERFONTSIZE = "{isLargerThan48 ? '30' : 'lg'}";
   const [isLargerThan48] = useMediaQuery('(min-width: 48em)');
 
   const array = [
@@ -69,15 +71,21 @@ const AboutUs = () => {
         <Heading size={isLargerThan48 ? 'lg' : 'md'}>
           Business Solutions
         </Heading>
-        <Text fontSize="lg">
+        <Text fontSize={TEXTFONTSIZE}>
           Point-of-Sales and Inventory Management System
         </Text>
-        <Text fontSize="20">Inventory Management and Accounting System</Text>
-        <Text fontSize="20">Hotel and Property Management System</Text>
-        <Text fontSize="20">Human Resource and Payroll System</Text>
-        <Text fontSize="20">Term Contract Management System</Text>
-        <Text fontSize="20">Lab Information and Management System</Text>
-        <Text fontSize="20">Cost Recovery System</Text>
+        <Text fontSize={TEXTFONTSIZE}>
+          Inventory Management and Accounting System
+        </Text>
+        <Text fontSize={TEXTFONTSIZE}>
+          Hotel and Property Management System
+        </Text>
+        <Text fontSize={TEXTFONTSIZE}>Human Resource and Payroll System</Text>
+        <Text fontSize={TEXTFONTSIZE}>Term Contract Management System</Text>
+        <Text fontSize={TEXTFONTSIZE}>
+          Lab Information and Management System
+        </Text>
+        <Text fontSize={TEXTFONTSIZE}>Cost Recovery System</Text>
       </Flex>
       <Flex
         height="350px"
@@ -97,7 +105,9 @@ const AboutUs = () => {
         <Heading size={isLargerThan48 ? 'lg' : 'md'}>
           Custom-made Solution
         </Heading>
-        <Text fontSize="lg">We tailor made to your business needs</Text>
+        <Text fontSize={TEXTFONTSIZE}>
+          We tailor made to your business needs
+        </Text>
       </Flex>
       <Flex
         height="350px"
@@ -115,9 +125,9 @@ const AboutUs = () => {
       >
         <Icon as={FaCloudflare} boxSize={14} color="blue.600" mb="5" />
         <Heading size={isLargerThan48 ? 'lg' : 'md'}>Business Services</Heading>
-        <Text fontSize="lg">Clouding and Hosting Services</Text>
-        <Text fontSize="lg">Web Design and Hosting Services</Text>
-        <Text fontSize="lg">Cloud Database Solutions</Text>
+        <Text fontSize={TEXTFONTSIZE}>Clouding and Hosting Services</Text>
+        <Text fontSize={TEXTFONTSIZE}>Web Design and Hosting Services</Text>
+        <Text fontSize={TEXTFONTSIZE}>Cloud Database Solutions</Text>
       </Flex>
       {/* {array.map(arr => (
         <>
