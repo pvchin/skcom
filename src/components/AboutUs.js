@@ -52,7 +52,7 @@ const AboutUs = () => {
       flexDirection={isLargerThan48 ? 'row' : 'column'}
     >
       <Flex
-        height="350px"
+        height={isLargerThan48 ? '350' : '450'}
         bg="blackAlpha.200"
         width={isLargerThan48 ? '32%' : 'full'}
         shadow="md"
@@ -70,12 +70,12 @@ const AboutUs = () => {
         <Text fontSize="lg">
           Point-of-Sales and Inventory Management System
         </Text>
-        <Text fontSize="lg">Inventory Management and Accounting System</Text>
-        <Text fontSize="lg">Hotel and Property Management System</Text>
-        <Text fontSize="lg">Human Resource and Payroll System</Text>
-        <Text fontSize="lg">Term Contract Management System</Text>
-        <Text fontSize="lg">Lab Information and Management System</Text>
-        <Text fontSize="lg">Cost Recovery System</Text>
+        <Text fontSize="20">Inventory Management and Accounting System</Text>
+        <Text fontSize="20">Hotel and Property Management System</Text>
+        <Text fontSize="20">Human Resource and Payroll System</Text>
+        <Text fontSize="20">Term Contract Management System</Text>
+        <Text fontSize="20">Lab Information and Management System</Text>
+        <Text fontSize="20">Cost Recovery System</Text>
       </Flex>
       <Flex
         height="350px"
