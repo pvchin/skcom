@@ -38,7 +38,7 @@ const ContactUsPage = () => {
           <Center>
             <Image src={ContactImg} alt="profile" boxSize="140" />
           </Center>
-          <Heading py={5}>Our Address:</Heading>
+          <Heading py={5}>Our Contact:</Heading>
           <Text fontSize={isLargerThan62 ? '24' : '10'} color="blue">
             Lot Q11, Tapak Perindustrian Lambak Kanan
           </Text>

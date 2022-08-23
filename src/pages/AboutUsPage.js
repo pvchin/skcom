@@ -42,7 +42,8 @@ const AboutUsPage = () => {
               Established in 1998, SK Communication Services is a local company
               which specialize in software development. We have provided a wide
               range of high quality business solutions to meet the needs of our
-              local customers in all these years.
+              local customers in all these years including government and
+              private sectors.
             </Text>
           </Box>
         </VStack>
